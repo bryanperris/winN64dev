@@ -107,7 +107,7 @@ for target in globals()['TARGETS']:
 	makeRom(target, romName)
 	
 	# Remove immediate files
-	filelist = [ f for f in os.listdir(".") if f.endswith(".o") or f.endswith(".bin") or f.endswith(".elf")]
+	filelist = [ f for f in os.listdir(".") if f.endswith(".o") or f.endswith(".bin")]
 	for f in filelist:
 		os.remove(f)
 	
